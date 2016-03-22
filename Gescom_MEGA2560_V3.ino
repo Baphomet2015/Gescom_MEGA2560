@@ -110,7 +110,7 @@ void GESCOM3::begin(void)
 {
 
   gd.serialPtr->begin(velocidad);
-
+  
 }
 
 
@@ -334,7 +334,7 @@ int GESCOM3::enviaRespuesta(void)
   maxLen = strlen(gd.buffRespCmd);
   if ( maxLen!=0 )
      {
-       sprintf( buffer_TX,"%s%s%s%d%s%04u%04u" ,
+       sprintf( buffer_TX,"%s%s%s%d%s%04X%04X" ,
                 cmd_Cabecera                   ,
                 cmd_OrgID                      ,
                 cmd_DesID                      ,
@@ -350,7 +350,7 @@ int GESCOM3::enviaRespuesta(void)
      }
   else   
      {
-       sprintf( buffer_TX,"%s%s%s%d%s%04u%04u" ,
+       sprintf( buffer_TX,"%s%s%s%d%s%04X%04X" ,
                 cmd_Cabecera                   ,
                 cmd_OrgID                      ,
                 cmd_DesID                      ,

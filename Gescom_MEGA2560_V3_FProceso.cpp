@@ -22,7 +22,7 @@
 
 // -------------------------------------------------------------------
 
-// Fecha Generación: 21/09/2015 , 12:21
+// Fecha Generación: 01/04/2016 , 12:33
 // -------------------------------------------------------------------
 
 
@@ -82,11 +82,13 @@ case ( IDE_CMD_CM_RSV): {  cmd_Comando_CM_RSV(&gd);  break; }
 
                 case ( IDE_CMD_S_MLX9): {  cmd_Comando_S_MLX9(&gd);  break; }
 
+                case ( IDE_CMD_S_VCHG): {  cmd_Comando_S_VCHG(&gd);  break; }
+
                 case ( IDE_CMD_R_TIME): {  cmd_Comando_R_TIME(&gd);  break; }
 
                 case ( IDE_CMD_L_LEDS): {  cmd_Comando_L_LEDS(&gd);  break; }
-
                 case ( IDE_CMD_C_MIZQ): {  cmd_Comando_C_MIZQ(&gd);  break; }
+
                 case ( IDE_CMD_C_MDER): {  cmd_Comando_C_MDER(&gd);  break; }
 
                 case ( IDE_CMD_C_RMOV): {  cmd_Comando_C_RMOV(&gd);  break; }

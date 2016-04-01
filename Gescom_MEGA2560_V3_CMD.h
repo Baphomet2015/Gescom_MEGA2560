@@ -34,7 +34,7 @@
  // ----------------------------------------------------------
 
  // ----------------------------------------------------------
- // Fecha Generación: 21/09/2015 , 12:21
+ // Fecha Generación: 01/04/2016 , 12:33
 
  // ----------------------------------------------------------
  #define  IDE_CMD_CM_RSV    0x00     // Comando Reservado
@@ -49,13 +49,13 @@
  #define  IDE_CMD_S_CDBG    0x14     // Sensor Indicador de conector DEBUG conectado
  #define  IDE_CMD_S_MLX9    0x15     // Sensor de Temperatura Melexis 90614
 
+ #define  IDE_CMD_S_VCHG    0x16     // Sensor Indicador de tension de recarga presente
  #define  IDE_CMD_R_TIME    0x20     // Reloj de Tiempo Real
  #define  IDE_CMD_L_LEDS    0x21     // Control de los Leds
  #define  IDE_CMD_C_MIZQ    0x30     // Control motor izquierdo
+
  #define  IDE_CMD_C_MDER    0x31     // Control motor derecho
-
  #define  IDE_CMD_C_RMOV    0x32     // Comando de movimiento
-
 
 
 
@@ -69,7 +69,7 @@
   // --------------------------------------------------------------
 
  // --------------------------------------------------------------
- // Fecha Generación: 21/09/2015 , 12:21
+ // Fecha Generación: 01/04/2016 , 12:33
  // --------------------------------------------------------------
 
 
@@ -85,7 +85,7 @@
  // ----------------------------------------------------------
 
  // ----------------------------------------------------------
- // Fecha Generación: 21/09/2015 , 12:21
+ // Fecha Generación: 01/04/2016 , 12:33
 
  // ----------------------------------------------------------
  #define IDE_DISPOSITIVO_RSV    0x00     //RSV, RESERVADO
@@ -108,7 +108,7 @@
  // ----------------------------------------------------------
 
  // ----------------------------------------------------------
- // Fecha Generación: 21/09/2015 , 12:21
+ // Fecha Generación: 01/04/2016 , 12:33
  // ----------------------------------------------------------
 
  #define IDE_PARAM_RSV    0x0000     // RSV, RESERVADO
@@ -157,7 +157,7 @@
    // ----------------------------------------------------------
 
    // ----------------------------------------------------------
-   // Fecha Generación: 21/09/2015 , 12:21
+   // Fecha Generación: 01/04/2016 , 12:33
    // ----------------------------------------------------------
 
  extern  void  cmd_Comando_CM_RSV  (GESCOM_DATA* gd);
@@ -172,11 +172,12 @@
  extern  void  cmd_Comando_S_CDBG  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_S_MLX9  (GESCOM_DATA* gd);
 
+ extern  void  cmd_Comando_S_VCHG  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_R_TIME  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_L_LEDS  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_C_MIZQ  (GESCOM_DATA* gd);
- extern  void  cmd_Comando_C_MDER  (GESCOM_DATA* gd);
 
+ extern  void  cmd_Comando_C_MDER  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_C_RMOV  (GESCOM_DATA* gd);
 
 #endif

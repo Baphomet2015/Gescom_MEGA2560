@@ -1,4 +1,3 @@
-
 // --------------------------------------------------------------------
 //
 //                       GESCOM
@@ -20,10 +19,15 @@
 // -------------------------------------------------------------------
 
 
+
+<<<<<<< HEAD
+// -------------------------------------------------------------------
+// Fecha Generación: 11/04/2016 , 21:03
+=======
+// Fecha Generación: 01/04/2016 , 12:33
+>>>>>>> be16e4121065e516b91b3689d9ec8c181e48209f
 // -------------------------------------------------------------------
 
-// Fecha Generación: 01/04/2016 , 12:33
-// -------------------------------------------------------------------
 
 
 #include <stdio.h>
@@ -33,7 +37,6 @@
 #include <Arduino.h>
 #include "Gescom_MEGA2560_V3.h"
 #include "Gescom_MEGA2560_V3_CMD.h"
-
 
 
 
@@ -64,12 +67,35 @@ int GESCOM3::procesaComando_02(void)
 
 
 
-case ( IDE_CMD_CM_RSV): {  cmd_Comando_CM_RSV(&gd);  break; }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                case ( IDE_CMD_CM_RSV): {  cmd_Comando_CM_RSV(&gd);  break; }
 
                 case ( IDE_CMD_CM_RET): {  cmd_Comando_CM_RET(&gd);  break; }
 
                 case ( IDE_CMD_CM_DBG): {  cmd_Comando_CM_DBG(&gd);  break; }
+
                 case ( IDE_CMD_S_MDER): {  cmd_Comando_S_MDER(&gd);  break; }
 
                 case ( IDE_CMD_S_MIZQ): {  cmd_Comando_S_MIZQ(&gd);  break; }
@@ -81,6 +107,7 @@ case ( IDE_CMD_CM_RSV): {  cmd_Comando_CM_RSV(&gd);  break; }
                 case ( IDE_CMD_S_CDBG): {  cmd_Comando_S_CDBG(&gd);  break; }
 
                 case ( IDE_CMD_S_MLX9): {  cmd_Comando_S_MLX9(&gd);  break; }
+                case ( IDE_CMD_S_VCHG): {  cmd_Comando_S_VCHG(&gd);  break; }
 
                 case ( IDE_CMD_S_VCHG): {  cmd_Comando_S_VCHG(&gd);  break; }
 
@@ -92,6 +119,15 @@ case ( IDE_CMD_CM_RSV): {  cmd_Comando_CM_RSV(&gd);  break; }
                 case ( IDE_CMD_C_MDER): {  cmd_Comando_C_MDER(&gd);  break; }
 
                 case ( IDE_CMD_C_RMOV): {  cmd_Comando_C_RMOV(&gd);  break; }
+
+
+
+
+
+
+
+
+
 
 
          }

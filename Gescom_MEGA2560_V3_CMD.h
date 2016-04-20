@@ -34,32 +34,28 @@
  // ----------------------------------------------------------
 
  // ----------------------------------------------------------
-<<<<<<< HEAD
- // Fecha Generación: 11/04/2016 , 21:03
-=======
- // Fecha Generación: 01/04/2016 , 12:33
->>>>>>> be16e4121065e516b91b3689d9ec8c181e48209f
+ // Fecha Generación: 20/04/2016 , 12:06
 
  // ----------------------------------------------------------
- #define  IDE_CMD_CM_RSV    0x00     // Comando Reservado
+ #define  IDE_CMD_CM_R00    0x00     // Comando Reservado 0
 
- #define  IDE_CMD_CM_RET    0x01     // Comando Respuesta
+ #define  IDE_CMD_CM_R01    0x01     // Comando Reservado 1
  #define  IDE_CMD_CM_DBG    0x02     // Comando DEBUG
- #define  IDE_CMD_S_MDER    0x10     // Sensor Corriente motor derecho
- #define  IDE_CMD_S_MIZQ    0x11     // Sensor Corriente motor izquierdo
-
  #define  IDE_CMD_B_LIPO    0x12     // Bateria LiPo
  #define  IDE_CMD_B_PPAK    0x13     // Bateria Power Pack
+
  #define  IDE_CMD_S_CDBG    0x14     // Sensor Indicador de conector DEBUG conectado
  #define  IDE_CMD_S_MLX9    0x15     // Sensor de Temperatura Melexis 90614
-
  #define  IDE_CMD_S_VCHG    0x16     // Sensor Indicador de tension de recarga presente
  #define  IDE_CMD_R_TIME    0x20     // Reloj de Tiempo Real
+
  #define  IDE_CMD_L_LEDS    0x21     // Control de los Leds
  #define  IDE_CMD_C_MIZQ    0x30     // Control motor izquierdo
-
  #define  IDE_CMD_C_MDER    0x31     // Control motor derecho
  #define  IDE_CMD_C_RMOV    0x32     // Comando de movimiento
+
+
+
 
 
 
@@ -73,11 +69,7 @@
   // --------------------------------------------------------------
 
  // --------------------------------------------------------------
-<<<<<<< HEAD
- // Fecha Generación: 11/04/2016 , 21:03
-=======
- // Fecha Generación: 01/04/2016 , 12:33
->>>>>>> be16e4121065e516b91b3689d9ec8c181e48209f
+ // Fecha Generación: 20/04/2016 , 12:06
  // --------------------------------------------------------------
 
 
@@ -93,11 +85,7 @@
  // ----------------------------------------------------------
 
  // ----------------------------------------------------------
-<<<<<<< HEAD
- // Fecha Generación: 11/04/2016 , 21:03
-=======
- // Fecha Generación: 01/04/2016 , 12:33
->>>>>>> be16e4121065e516b91b3689d9ec8c181e48209f
+ // Fecha Generación: 20/04/2016 , 12:06
 
  // ----------------------------------------------------------
  #define IDE_DISPOSITIVO_RSV    0x00     //RSV, RESERVADO
@@ -120,11 +108,7 @@
  // ----------------------------------------------------------
 
  // ----------------------------------------------------------
-<<<<<<< HEAD
- // Fecha Generación: 11/04/2016 , 21:03
-=======
- // Fecha Generación: 01/04/2016 , 12:33
->>>>>>> be16e4121065e516b91b3689d9ec8c181e48209f
+ // Fecha Generación: 20/04/2016 , 12:06
  // ----------------------------------------------------------
 
  #define IDE_PARAM_RSV    0x0000     // RSV, RESERVADO
@@ -173,32 +157,26 @@
    // ----------------------------------------------------------
 
    // ----------------------------------------------------------
-<<<<<<< HEAD
-   // Fecha Generación: 11/04/2016 , 21:03
-=======
-   // Fecha Generación: 01/04/2016 , 12:33
->>>>>>> be16e4121065e516b91b3689d9ec8c181e48209f
+   // Fecha Generación: 20/04/2016 , 12:06
    // ----------------------------------------------------------
 
- extern  void  cmd_Comando_CM_RSV  (GESCOM_DATA* gd);
- extern  void  cmd_Comando_CM_RET  (GESCOM_DATA* gd);
+ extern  void  cmd_Comando_CM_R00  (GESCOM_DATA* gd);
+ extern  void  cmd_Comando_CM_R01  (GESCOM_DATA* gd);
 
  extern  void  cmd_Comando_CM_DBG  (GESCOM_DATA* gd);
- extern  void  cmd_Comando_S_MDER  (GESCOM_DATA* gd);
- extern  void  cmd_Comando_S_MIZQ  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_B_LIPO  (GESCOM_DATA* gd);
-
  extern  void  cmd_Comando_B_PPAK  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_S_CDBG  (GESCOM_DATA* gd);
- extern  void  cmd_Comando_S_MLX9  (GESCOM_DATA* gd);
 
+ extern  void  cmd_Comando_S_MLX9  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_S_VCHG  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_R_TIME  (GESCOM_DATA* gd);
+
  extern  void  cmd_Comando_L_LEDS  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_C_MIZQ  (GESCOM_DATA* gd);
-
  extern  void  cmd_Comando_C_MDER  (GESCOM_DATA* gd);
  extern  void  cmd_Comando_C_RMOV  (GESCOM_DATA* gd);
+
 
 #endif
 
